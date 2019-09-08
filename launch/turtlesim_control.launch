@@ -1,8 +1,12 @@
 <launch>
-	<group ns="my_turtle" >
-		<node pkg="turtlesim" type="turtlesim_node" name="turtlesim" />  
-	   
+    <group ns="my_turtle" >
+        <node pkg="turtlesim" type="turtlesim_node" name="turtlesim" />
 
-		<node pkg="turtlesim" type="turtle_teleop_key" name="teleopkey" />  
-	</group>
+        <node
+            launch-prefix="xterm -e"
+            output = "screen"
+            pkg="turtlesim_control" type="Main.py" name="PubGo2Goal"/>
+
+        <node pkg="turtlesim" type="turtle_teleop_key" name="teleopkey" />
+    </group>
  </launch>

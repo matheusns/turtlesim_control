@@ -5,7 +5,7 @@
         <node
             launch-prefix="xterm -e"
             output = "screen"
-            pkg="turtlesim_control" type="Main.py" name="PubGo2Goal"/>
+            pkg="turtlesim_control" type="controller.py" name="PubGo2Goal"/>
 
         <node pkg="turtlesim" type="turtle_teleop_key" name="teleopkey" />
     </group>

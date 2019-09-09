@@ -9,9 +9,9 @@ from turtlesim.msg import Pose
 from math import pow, atan2, sqrt
 
 
-class PubGo2Goal:
+class Controller:
     def __init__(self):
-        rospy.init_node('PubGo2Goal')
+        rospy.init_node('turtle_pose_controller')
         self.initMemberVariables()
         self.initROSChannels()
         rospy.spin()

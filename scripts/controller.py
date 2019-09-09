@@ -5,6 +5,6 @@ import Controller
 
 if __name__ == '__main__':
     try:
-        test = Controller.Controller()
+        controller = Controller.Controller()
     except Exception as e:
-        print "Program is running out of scope."
+        print "Turtle controller node is running out of scope."

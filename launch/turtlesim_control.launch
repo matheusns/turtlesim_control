@@ -8,5 +8,7 @@
             pkg="turtlesim_control" type="controller.py" name="turtle_pose_controller"/>
 
         <node pkg="turtlesim" type="turtle_teleop_key" name="teleopkey" />
+
+        <node pkg="turtlesim_control" type="goal_sender.py" name="turtle_pose_goal_sender" />
     </group>
  </launch>

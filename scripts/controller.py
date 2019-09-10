@@ -43,7 +43,7 @@ class Controller:
         vel_msg.angular.x = 0
         vel_msg.angular.y = 0
 
-        distance_tolerance = 0.1
+        distance_tolerance = 0.2
 
         rate = rospy.Rate(20)
 
